@@ -85,11 +85,13 @@ int main()
 
     q.dequeue();
     pq.dequeue();
-     s.pop();
+    s.pop();
     dq.removeFirst();
     dq.removeLast();
+    dq.removeLast();
+    dq.removeLast();
 
-    cout << "==================" << endl;
+    cout << "==================" << endl << endl;
 
     cout << "QUEUE OUTPUT: \n";
     q.printAll();
