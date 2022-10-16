@@ -110,7 +110,7 @@ bool Deque::isEmpty()
 
 void Deque::printAll()
 {
-    cout << "[";
+    //cout << "[";
 
     if (head == NULL)
     {
@@ -118,15 +118,16 @@ void Deque::printAll()
     }
     else
     {
-        cout << head->getName();
-        CountryNode *next = head->getNext();
+        cout << head->getAllData();
+        CountryNode* next = head->getNext();
 
         while (next != NULL)
         {
-            cout << ", " << next->getName();
+            //cout << next->getAllData();
+            cout << next->getAllData();
             next = next->getNext();
         }
     }
 
-    cout << "]" << endl;
+    //cout << "]" << endl;
 }

@@ -3,6 +3,7 @@
 
 CountryNode::CountryNode(const string& cName, const int& cSize, const int& cPop, const string& cGov) : name(cName), size(cSize), population(cPop), government(cGov) {}
 
+
 string CountryNode::getName()
 {
     return name;
@@ -30,4 +31,15 @@ CountryNode* CountryNode::getNext()
 
 void CountryNode::setNext(CountryNode* neNext){
     next = neNext;
+}
+
+string CountryNode::getAllData()
+{
+    string data = "";
+    data.append(name);
+    data.append("\t" + to_string(size));
+    data.append("\t" + to_string(population));
+    data.append("\t" + government + "\n");
+
+    return data;
 }
