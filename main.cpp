@@ -5,13 +5,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <cstdlib>
-#include <cstdio>
-#include <filesystem>
-
 #include <sstream>
-#include <vector>
-#include <string>
 
 using namespace std;
 
@@ -71,20 +65,19 @@ int main()
         dq.insertFirst(strings[0], size, pop, strings[3]);
         s.push(strings[0], size, pop, strings[3]);
 
-        // cout << "Name: " << strings[0] << ", Size: " << strings[1] << ", Popu:" << strings[2] << ", Econ:" << strings[3] << endl;
     }
 
-    // cout << "QUEUE OUTPUT: \n";
-    // q.printAll();
-    // cout << endl;
+    cout << "QUEUE OUTPUT: \n";
+    q.printAll();
+    cout << endl;
 
-    // cout << "PQUEUE OUTPUT: \n";
-    // pq.printAll();
-    // cout << endl;
+    cout << "PQUEUE OUTPUT: \n";
+    pq.printAll();
+    cout << endl;
 
-    // cout << "DEQUE OUTPUT: \n";
-    // dq.printAll();
-    // cout << endl;
+    cout << "DEQUE OUTPUT: \n";
+    dq.printAll();
+    cout << endl;
 
     cout << "STACK OUTPUT: \n";
     s.printAll();
@@ -92,8 +85,9 @@ int main()
 
     q.dequeue();
     pq.dequeue();
+     s.pop();
+    dq.removeFirst();
     dq.removeLast();
-    s.pop();
 
     cout << "==================" << endl;
 
