@@ -9,7 +9,7 @@ private:
 public:
     Stack();
 
-    void push(string name, int size, int pop, string economy);
+    void push(string name, int size, int pop, string gov);
 
     void pop();
 

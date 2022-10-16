@@ -17,10 +17,10 @@ void PQueue::setSize(int s)
     qSize = s;
 }
 
-void PQueue::enqueue(string name, int size, int pop, string econ)
+void PQueue::enqueue(string name, int size, int pop, string gov)
 {
 
-    CountryNode *node = new CountryNode(name, size, pop, econ);
+    CountryNode *node = new CountryNode(name, size, pop, gov);
     node->setNext(NULL);
 
     if (head == NULL)

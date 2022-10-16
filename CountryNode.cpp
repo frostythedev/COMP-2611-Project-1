@@ -1,7 +1,7 @@
 #include "CountryNode.h"
 #include <string>
 
-CountryNode::CountryNode(const string& cName, const int& cSize, const int& cPop, const string& cEcon) : name(cName), size(cSize), population(cPop), economy(cEcon) {}
+CountryNode::CountryNode(const string& cName, const int& cSize, const int& cPop, const string& cGov) : name(cName), size(cSize), population(cPop), government(cGov) {}
 
 string CountryNode::getName()
 {
@@ -18,9 +18,9 @@ int CountryNode::getPopulation()
     return population;
 }
 
-string CountryNode::getEconomy()
+string CountryNode::getGov()
 {
- return economy;
+ return government;
 }
 
 CountryNode* CountryNode::getNext()

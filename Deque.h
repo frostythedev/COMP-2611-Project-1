@@ -14,11 +14,8 @@ class Deque
     void setSize(int s);
     void printAll();
 
-    //CountryNode* dequeue();
-    //void enqueue(string name, int size, int pop, string econ);
-
-    void insertFirst(string name, int size, int pop, string econ);
-    void insertLast(string name, int size, int pop, string econ);
+    void insertFirst(string name, int size, int pop, string gov);
+    void insertLast(string name, int size, int pop, string gov);
 
     void removeFirst();
     void removeLast();

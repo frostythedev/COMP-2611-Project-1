@@ -5,10 +5,10 @@ Stack::Stack(){
     head = NULL;
 };
 
-void Stack::push(string name, int size, int pop, string economy)
+void Stack::push(string name, int size, int pop, string gov)
 {
 
-    CountryNode* node = new CountryNode(name, size, pop, economy);
+    CountryNode* node = new CountryNode(name, size, pop, gov);
 
     if (head == NULL)
     {

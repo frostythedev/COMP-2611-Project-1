@@ -12,7 +12,7 @@ private:
     string name;
     int size;
     int population;
-    string economy;
+    string government;
 
     CountryNode* next;
 
@@ -22,14 +22,14 @@ public:
     string getName();
     int getSize();
     int getPopulation();
-    string getEconomy();
+    string getGov();
 
     CountryNode* getNext();
 
     void setName(string& name);
     void setSize(int& size);
     void setPopulation(int& size);
-    void setEconomy(string& economy);
+    void setGov(string& government);
 
     void setNext(CountryNode* CountryNode);
 };

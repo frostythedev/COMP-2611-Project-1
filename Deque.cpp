@@ -17,9 +17,9 @@ void Deque::setSize(int s)
     qSize = s;
 }
 
-void Deque::insertFirst(string name, int size, int pop, string econ)
+void Deque::insertFirst(string name, int size, int pop, string gov)
 {
-    CountryNode *node = new CountryNode(name, size, pop, econ);
+    CountryNode *node = new CountryNode(name, size, pop, gov);
 
     if (head == NULL)
     {
@@ -53,12 +53,12 @@ void Deque::removeFirst()
     }
 }
 
-void Deque::insertLast(string name, int size, int pop, string econ)
+void Deque::insertLast(string name, int size, int pop, string gov)
 {
-        CountryNode *node = new CountryNode(name, size, pop, econ);
+        CountryNode *node = new CountryNode(name, size, pop, gov);
 
         if(tail == NULL && head == NULL){
-            insertFirst(name, size, pop, econ);
+            insertFirst(name, size, pop, gov);
             return;
         }
 
@@ -92,75 +92,6 @@ void Deque::removeLast()
     tail = curr;
 
 }
-
-// void Deque::enqueue(string name, int size, int pop, string econ)
-// {
-
-//     CountryNode *node = new CountryNode(name, size, pop, econ);
-//     node->setNext(NULL);
-
-//     if (head == NULL)
-//     {
-//         head = node;
-//         tail = node;
-//     }
-//     else
-//     {
-
-//         if (node->getName() < head->getName())
-//         {
-//             node->setNext(head);
-//             head = node;
-//         }
-//         else
-//         {
-
-//             CountryNode *infront = head->getNext();
-//             CountryNode *behind = head;
-
-//             while (infront != NULL && node->getName() > behind->getName())
-//             {
-//                 behind = infront;
-//                 infront = behind->getNext();
-//             }
-
-//             if (infront == NULL) // We have reached the end of the list
-//             {
-//                 behind->setNext(node);
-//                 return;
-//             }
-
-//             node->setNext(infront);
-//             behind->setNext(node);
-//             return;
-//         }
-//     }
-
-// after:
-
-//     qSize++;
-// }
-
-// CountryNode* Deque::dequeue()
-// {
-
-//     if (head == NULL)
-//         return NULL;
-
-//     CountryNode *h = head;
-
-//     if (head->getNext() == NULL)
-//     {
-//         head = NULL;
-//     }
-//     else
-//     {
-//         head = head->getNext();
-//     }
-
-//     qSize--;
-//     return h;
-// }
 
 CountryNode *Deque::first()
 {

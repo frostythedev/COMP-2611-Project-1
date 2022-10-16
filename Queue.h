@@ -15,7 +15,7 @@ public:
 
     CountryNode* dequeue();
 
-    void enqueue(string name, int size, int pop, string econ);
+    void enqueue(string name, int size, int pop, string gov);
 
     CountryNode* front();
     
