@@ -1,22 +1,30 @@
 #include "Queue.h"
 #include <iostream>
 
+
+// Default constructor to initialize variables 
 Queue::Queue()
 {
     head = NULL;
     qSize = 0;
 }
 
+
+// Get the current size of the queue
 int Queue::size()
 {
     return qSize;
 }
 
+// Sets the size of the current queue to s
 void Queue::setSize(int s)
 {
     qSize = s;
 }
 
+// Creates a new countryNode, sets it to the head if the current head is null. If currentHead is not null and it does not have anext
+// node that it currently points too, set the created node as the next node. If the head currently points to a nextNode, loop until
+// we reach the end of the ADT structure and append the createdNode to the end of the structure
 void Queue::enqueue(string name, int size, int pop, string gov)
 {
 
@@ -52,6 +60,7 @@ void Queue::enqueue(string name, int size, int pop, string gov)
     qSize++;
 }
 
+// Removes the queue at the head/front of the queue
 CountryNode *Queue::dequeue()
 {
 
@@ -73,15 +82,18 @@ CountryNode *Queue::dequeue()
     return h;
 }
 
+// Returns the node at the front/head of the queue
 CountryNode* Queue::front(){
     return head;
 }
 
+// Returns true if the current size of the pqueue is 0 or if the head of the pQueue is null, returns false otherwise
 bool Queue::isEmpty()
 {
     return (qSize == 0 || head == NULL);
 }
 
+// Prints all data contained within the current ADT
 void Queue::printAll()
 {
     //cout << "[";

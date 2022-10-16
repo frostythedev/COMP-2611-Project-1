@@ -19,6 +19,8 @@ private:
 public:
     CountryNode(const string&, const int&, const int&, const string&);
 
+
+// Accessor functions to retrieve private data of the Country Node class
     string getName();
     int getSize();
     int getPopulation();
@@ -28,6 +30,7 @@ public:
 
     CountryNode* getNext();
 
+// Reassignment or 'Setter' funtions to reassign private data fields of the Country Node class
     void setName(string& name);
     void setSize(int& size);
     void setPopulation(int& size);
