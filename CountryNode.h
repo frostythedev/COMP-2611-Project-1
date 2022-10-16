@@ -24,6 +24,8 @@ public:
     int getPopulation();
     string getGov();
 
+    string getAllData();
+
     CountryNode* getNext();
 
     void setName(string& name);

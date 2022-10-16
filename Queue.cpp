@@ -84,7 +84,7 @@ bool Queue::isEmpty()
 
 void Queue::printAll()
 {
-    cout << "[";
+    //cout << "[";
 
     if (head == NULL)
     {
@@ -92,15 +92,16 @@ void Queue::printAll()
     }
     else
     {
-        cout << head->getName();
+        cout << head->getAllData();
         CountryNode* next = head->getNext();
 
         while (next != NULL)
         {
-            cout << ", " << next->getName();
+            //cout << next->getAllData();
+            cout << next->getAllData();
             next = next->getNext();
         }
     }
 
-    cout << "]" << endl;
+    //cout << "]" << endl;
 }
