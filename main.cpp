@@ -74,17 +74,17 @@ int main()
         // cout << "Name: " << strings[0] << ", Size: " << strings[1] << ", Popu:" << strings[2] << ", Econ:" << strings[3] << endl;
     }
 
-    cout << "QUEUE OUTPUT: \n";
-    q.printAll();
-    cout << endl;
+    // cout << "QUEUE OUTPUT: \n";
+    // q.printAll();
+    // cout << endl;
 
-    cout << "PQUEUE OUTPUT: \n";
-    pq.printAll();
-    cout << endl;
+    // cout << "PQUEUE OUTPUT: \n";
+    // pq.printAll();
+    // cout << endl;
 
-    cout << "DEQUE OUTPUT: \n";
-    dq.printAll();
-    cout << endl;
+    // cout << "DEQUE OUTPUT: \n";
+    // dq.printAll();
+    // cout << endl;
 
     cout << "STACK OUTPUT: \n";
     s.printAll();
